@@ -8,13 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
         html {
             scroll-behavior: smooth;
         }
         body {
             font-family: 'Outfit', sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: black;
             color: white;
             text-align: center;
@@ -602,7 +607,9 @@
         
 	 @media (max-width: 768px) {
     header {
-        padding: 4% 5%;
+        width: 100%;
+        padding: 15px 5%;
+        box-sizing: border-box;
     }
 
     .hamburger {
@@ -613,6 +620,10 @@
         font-size: 24px;
         cursor: pointer;
         z-index: 1000;
+    }
+
+    .hamburger::before {
+        display: none;
     }
 
     .mobile-menu-toggle {
@@ -643,74 +654,127 @@
         font-size: 16px;
     }
 
-    .hero {
-        height: 100vh;
-        margin-top: 0;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-
-    .hero h1 {
-        font-size: 15vw;
-        margin: 0;
-        padding: 0 5%;
-        position: absolute;
-        bottom: 15%;
-        left: 0;
+    .hero,
+    .about-section,
+    .schedule,
+    #members,
+    .gallery-section,
+    .repertoire-section,
+    .contact-section,
+    .footer {
         width: 100%;
-        text-align: center;
-        background: -webkit-linear-gradient(#ffffff, #656565);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-    }
-
-    .about-section {
-        padding: 10% 5%;
-    }
-
-    .about-card {
-        width: 90%;
-        padding: 5%;
-    }
-
-    .schedule {
-        padding: 10% 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .schedule-table {
-        width: 90%;
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .schedule-table td,
+    .schedule-table th {
+        padding: 10px 5px;
     }
 
     #members {
-        width: 90%;
-        padding: 5%;
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #members img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .repertoire-text,
+    .repertoire-download {
+        width: 100%;
+        padding: 0;
     }
 
     .gallery-container {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .gallery-controls {
         width: 90%;
     }
 
-    .repertoire-section {
-        padding: 10% 5%;
+    .contact-section {
+        padding: 40px 5%;
     }
 
-    .contact-section {
-        padding: 10% 5%;
+    .footer {
+        padding: 20px 5%;
     }
 
     .nav-links a {
         font-size: 14px;
     }
 
+    .hero {
+        height: 100vh;
+        margin-top: 60px;
+        background-size: 200% auto;
+        background-position: center 30%;
+        background-color: #000000;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+    }
+
     .hero h1 {
-        font-size: 18vw;
-        bottom: 20%;
+        font-size: 12vw;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-text-stroke-width: 0.5px;
+    }
+
+    .fa-before {
+        display: none;
+    }
+
+    .nav-links.active + .fa-before {
+        display: block;
+    }
+}
+
+/* Dodatna podešavanja za manje ekrane */
+@media (max-width: 480px) {
+    .schedule-table {
+        font-size: 12px;
+    }
+
+    .schedule-table td,
+    .schedule-table th {
+        padding: 8px 3px;
+    }
+
+    .hero {
+        background-size: 250% auto;
+        background-position: center 35%;
+    }
+
+    .hero h1 {
+        font-size: 11vw;
+        top: 80px;
     }
 }
 
@@ -897,6 +961,18 @@ section:not(.hero):hover::before {
     .repertoire-download a {
         width: 80%;
         text-align: center;
+    }
+}
+
+/* Dodatna podešavanja za manje ekrane */
+@media (max-width: 480px) {
+    .hero {
+        margin-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 11vw;
+        -webkit-text-stroke-width: 0.5px;
     }
 }
     </style>
