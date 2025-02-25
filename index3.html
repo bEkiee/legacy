@@ -602,14 +602,7 @@
         
 	 @media (max-width: 768px) {
     header {
-        padding: 15px;
-        background: black;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 99;
-        box-sizing: border-box;
-        border-bottom: 2px solid var(--highlight-color);
+        padding: 4% 5%;
     }
 
     .hamburger {
@@ -617,364 +610,295 @@
         background: none;
         border: none;
         color: white;
-        font-size: 20px;
+        font-size: 24px;
         cursor: pointer;
-        margin-right: 15px;
-        transition: all 0.3s ease;
+        z-index: 1000;
     }
 
-    .hamburger:hover {
-        color: var(--highlight-color);
+    .mobile-menu-toggle {
+        display: none;
     }
 
     .nav-links {
         display: none;
-        background: black;
-        padding: 10px 0;
-        margin-top: 10px;
-        border-top: 1px solid var(--highlight-color);
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 0;
+        text-align: center;
     }
 
     .nav-links.active {
-        display: block;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 4px 6px rgba(252, 227, 3, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 5% 0;
     }
 
     .nav-links a {
-        color: #A0A09F !important;
-        font-size: 14px;
-        padding: 12px 20px;
-        text-align: left;
-        display: block;
-        border-bottom: 1px solid #222;
-        transition: all 0.3s ease;
+        padding: 3% 0;
+        width: 100%;
+        font-size: 16px;
     }
 
-    .nav-links a:hover {
-        color: var(--highlight-color) !important;
-        background: rgba(252, 227, 3, 0.1);
-    }
-
-    /* Hero sekcija */
     .hero {
-        margin-top: 80px !important;
-        padding-top: 40px;
+        height: 100vh;
+        margin-top: 0;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
     }
 
     .hero h1 {
-        color: white;
-        text-shadow: 2px 2px 4px rgba(#656565);
-    
-        
-    }
-
-    /* Ostale sekcije */
-    h2 {
-        position: relative;
-    }
-
-    h2:after {
-        content: '';
+        font-size: 15vw;
+        margin: 0;
+        padding: 0 5%;
         position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50px;
-        height: 3px;
-        background: var(--highlight-color);
-    }
-
-    .schedule-table th {
-        background: rgba(252, 227, 3, 0.1);
-    }
-
-    .schedule-table tr:hover {
-        background: rgba(252, 227, 3, 0.05);
-    }
-
-    #members .text {
-        border-left: 3px solid var(--highlight-color);
-    }
-
-    .faq-question:hover {
-        color: var(--highlight-color);
-    }
-
-    .back-to-top {
-        background: var(--highlight-color);
-    }
-
-    .back-to-top:hover {
-        background: var(--highlight-hover);
-    }
-
-    /* Prvi section */
-    #schedule {
-        margin-top: 40px;
-    }
-        #members {
-            grid-template-columns: 1fr !important;
-            width: 90%;
-            gap: 20px;
-        }
-
-        /* Prvo resetujemo sve redoslede */
-        #members > div {
-            order: unset !important;
-        }
-
-        /* Postavljamo novi redosled */
-        #members > div:nth-child(1) { order: 1 !important; } /* Slika član 1 */
-        #members > div:nth-child(2) { order: 2 !important; } /* Tekst član 1 */
-        #members > div:nth-child(4) { order: 3 !important; } /* Slika član 2 */
-        #members > div:nth-child(3) { order: 4 !important; } /* Tekst član 2 */
-        #members > div:nth-child(5) { order: 5 !important; } /* Slika član 3 */
-        #members > div:nth-child(6) { order: 6 !important; } /* Tekst član 3 */
-        #members > div:nth-child(8) { order: 7 !important; } /* Slika član 4 */
-        #members > div:nth-child(7) { order: 8 !important; } /* Tekst član 4 */
-        #members > div:nth-child(9) { order: 9 !important; } /* Slika član 5 */
-        #members > div:nth-child(10) { order: 10 !important; } /* Tekst član 5 */
-        #members > div:nth-child(12) { order: 11 !important; } /* Slika član 6 */
-        #members > div:nth-child(11) { order: 12 !important; } /* Tekst član 6 */
-
-        /* Dodatna podešavanja za members sekciju na mobilnom */
-        #members img {
-            width: 100%;
-            height: auto;
-            max-width: 300px;
-            margin: 0 auto;
-            display: block;
-        }
-
-        #members .text {
-            padding: 15px 0;
-            border-left: none;
-            border-bottom: 2px solid #fff;
-            margin-bottom: 30px;
-        }
-	}
-    .highlight-genre {
-        color: var(--highlight-color);
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 1.2em;
-        letter-spacing: 2px;
-        padding: 0 3px;
-        transition: color 0.3s ease;
-    }
-
-    .highlight-genre:hover {
-        color: var(--highlight-hover);
-        text-shadow: 0 0 8px rgba(252, 227, 3, 0.3);
-    }
-
-    /* Definišemo žutu highlight boju */
-    :root {
-        --highlight-color: rgb(252, 227, 3);
-        --highlight-hover: rgb(255, 236, 66);
-    }
-
-    /* O nama sekcija */
-	
-    .about-section h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
-        position: relative;
-        text-align: left;
-        color: white;
-    }
-
-    .about-section h2:after {
-        content: "";
-        position: absolute;
-        width: 60px;
-        height: 3px;
-        background: var(--highlight-color);
-        bottom: -10px;
+        bottom: 15%;
         left: 0;
-        
+        width: 100%;
+        text-align: center;
+        background: -webkit-linear-gradient(#ffffff, #656565);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    .about-section {
+        padding: 10% 5%;
     }
 
     .about-card {
-        line-height: 1.8;
-        font-size: 18px;
-        margin-top: 5px;
+        width: 90%;
+        padding: 5%;
     }
 
-    /* Vraćamo sve highlight elemente na plavu boju */
-   
-
-    .nav-links a:hover {
-        color: var(--highlight-color) !important;
+    .schedule {
+        padding: 10% 5%;
     }
 
-    .social-icons a:hover {
-        color: var(--highlight-color);
+    .schedule-table {
+        width: 90%;
     }
 
-    .hamburger:hover {
-        color: var(--highlight-color);
+    #members {
+        width: 90%;
+        padding: 5%;
     }
 
-    h2:after {
-        background: var(--highlight-color);
+    .gallery-container {
+        width: 90%;
     }
 
-    /* Ažuriramo sve instance boje */
-    .schedule-table th {
-        background: rgba(252, 227, 3, 0.1);
-        color: var(--highlight-color);
-    }
-
-    .schedule-table tr:hover td {
-        background: rgba(252, 227, 3, 0.1);
-    }
-
-    .schedule-table th::before {
-        background: linear-gradient(90deg, transparent, var(--highlight-color), transparent);
-    }
-
-    .repertoire-text h2:after {
-        background: var(--highlight-color);
-    }
-
-    .download-arrow {
-        color: var(--highlight-color);
-    }
-
-    .repertoire-download a {
-        background: var(--highlight-color);
-        box-shadow: 0 5px 15px rgba(252, 227, 3, 0.3);
-    }
-
-    .repertoire-download a:hover {
-        background: var(--highlight-hover);
-        box-shadow: 0 7px 20px rgba(252, 227, 3, 0.5);
-    }
-
-    .contact-section a {
-        color: var(--highlight-color);
-    }
-
-    /* Mobile view specifični stilovi */
-    @media (max-width: 768px) {
-        .nav-links.active {
-            box-shadow: 0 4px 6px rgba(252, 227, 3, 0.1);
-        }
-        
-        .nav-links a:hover {
-            background: rgba(252, 227, 3, 0.1);
-        }
-    }
-
-    /* Ostali elementi koji koriste highlight boju */
-    h2:after {
-        background: var(--highlight-color);
-    }
-
-    .schedule-table td::before,
-    .schedule-table td::after {
-        background: var(--highlight-color);
-    }
-
-    .schedule-table tr:hover td:first-child {
-        border-left-color: var(--highlight-color);
-    }
-
-    .schedule-table tr:hover td:last-child {
-        border-right-color: var(--highlight-color);
-    }
-
-    section:not(.hero):hover::before {
-        background: linear-gradient(
-            rgba(0, 0, 0, 0.85),
-            rgba(252, 227, 3, 0.05)
-        );
-    }
-
-    /* Dodatni elementi */
-    .highlight-genre {
-        color: var(--highlight-color);
-    }
-
-    .highlight-genre:hover {
-        color: var(--highlight-hover);
-        text-shadow: 0 0 8px rgba(252, 227, 3, 0.3);
-    }
-
-    /* Media queries za responsive dizajn */
-    @media (max-width: 768px) {
-        .about-section h2,
-        .repertoire-text h2 {
-            font-size: 28px;
-        }
-    }
-
-    /* Repertoire Section */
     .repertoire-section {
-        padding: 60px 40px;
-        background: linear-gradient(to right, #1a1a1a, #0d0d0d);
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
+        padding: 10% 5%;
+    }
+
+    .contact-section {
+        padding: 10% 5%;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 18vw;
+        bottom: 20%;
+    }
+}
+
+.highlight-genre {
+    color: var(--highlight-color);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    padding: 0 3px;
+    transition: color 0.3s ease;
+}
+
+.highlight-genre:hover {
+    color: var(--highlight-hover);
+    text-shadow: 0 0 8px rgba(252, 227, 3, 0.3);
+}
+
+:root {
+    --highlight-color: rgb(252, 227, 3);
+    --highlight-hover: rgb(255, 236, 66);
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.about-section h2:after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: var(--highlight-color);
+    bottom: -10px;
+    left: 0;
+}
+
+.about-card {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.nav-links a:hover {
+    color: var(--highlight-color) !important;
+}
+
+.social-icons a:hover {
+    color: var(--highlight-color);
+}
+
+.hamburger:hover {
+    color: var(--highlight-color);
+}
+
+h2:after {
+    background: var(--highlight-color);
+}
+
+.schedule-table th {
+    background: rgba(252, 227, 3, 0.1);
+    color: var(--highlight-color);
+}
+
+.schedule-table tr:hover td {
+    background: rgba(252, 227, 3, 0.1);
+}
+
+.schedule-table th::before {
+    background: linear-gradient(90deg, transparent, var(--highlight-color), transparent);
+}
+
+.repertoire-text h2:after {
+    background: var(--highlight-color);
+}
+
+.download-arrow {
+    color: var(--highlight-color);
+}
+
+.repertoire-download a {
+    background: var(--highlight-color);
+    box-shadow: 0 5px 15px rgba(252, 227, 3, 0.3);
+}
+
+.repertoire-download a:hover {
+    background: var(--highlight-hover);
+    box-shadow: 0 7px 20px rgba(252, 227, 3, 0.5);
+}
+
+.contact-section a {
+    color: var(--highlight-color);
+}
+
+.nav-links.active {
+    box-shadow: 0 4px 6px rgba(252, 227, 3, 0.1);
+}
+
+.nav-links a:hover {
+    background: rgba(252, 227, 3, 0.1);
+}
+
+section:not(.hero):hover::before {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.85),
+        rgba(252, 227, 3, 0.05)
+    );
+}
+
+.highlight-genre {
+    color: var(--highlight-color);
+}
+
+.highlight-genre:hover {
+    color: var(--highlight-hover);
+    text-shadow: 0 0 8px rgba(252, 227, 3, 0.3);
+}
+
+@media (max-width: 768px) {
+    .about-section h2,
+    .repertoire-text h2 {
+        font-size: 28px;
+    }
+}
+
+.repertoire-section {
+    padding: 60px 40px;
+    background: linear-gradient(to right, #1a1a1a, #0d0d0d);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.repertoire-text {
+    width: 60%;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.repertoire-download {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .repertoire-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
     }
 
     .repertoire-text {
-        width: 60%;
-        text-align: left;
-        padding-right: 50px;
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .repertoire-text h2 {
+        text-align: center;
+    }
+
+    .repertoire-text h2:after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .repertoire-download {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
     }
 
-    /* Media queries za mobile view */
-    @media (max-width: 768px) {
-        .repertoire-section {
-            flex-direction: column;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .repertoire-text {
-            width: 100%;
-            padding-right: 0;
-            margin-bottom: 30px;
-        }
-
-        .repertoire-text h2 {
-            text-align: center;
-        }
-
-        .repertoire-text h2:after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .repertoire-download {
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        .download-arrow {
-            margin-bottom: 20px;
-        }
-
-        .repertoire-download a {
-            width: 80%;
-            text-align: center;
-        }
+    .download-arrow {
+        margin-bottom: 20px;
     }
+
+    .repertoire-download a {
+        width: 80%;
+        text-align: center;
+    }
+}
     </style>
 </head>
 <body>
