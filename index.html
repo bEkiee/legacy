@@ -19,34 +19,34 @@
             color: white;
             text-align: center;
         }
-                @font-face {
+		@font-face {
             font-family: AtomicAge;
             src: url(AtomicAge-Regular.ttf);
         }
-                header {
-                        background: black;
-                        padding: 20px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        position: fixed;
-                        width: 100%;
-                        top: 0;
-                        z-index: 1000;
-                        box-sizing: border-box;
-
-                }
-                #legacy{
-                        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('download.png');
-                }
-                .hamburger {
-                        display: none;
-                }
-                .nav-links {
-                        display: flex;
-                        gap: 30px;
-                        padding-left: 100px;
-                }
+		header {
+			background: black;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 1000;
+			box-sizing: border-box;
+		
+		}
+		#legacy{
+			background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('download.png');
+		}
+		.hamburger {
+			display: none;
+		}
+		.nav-links {
+			display: flex;
+			gap: 30px;
+			padding-left: 100px;
+		}
         .nav-links a {
             color: #A0A09F;
             text-decoration: none;
@@ -81,10 +81,10 @@
             align-items: center;
             justify-content: center;
             font-size: 50px;
-                        font-family: AtomicAge;
+			font-family: AtomicAge;
             margin-top: 80px;
-                        border-bottom: 2px solid #A0A09F;
-                        margin-bottom:50px;
+			border-bottom: 2px solid #A0A09F;
+			margin-bottom:50px;
         }
         .hero h1 {
             font-size: 102px;
@@ -507,7 +507,7 @@
             margin-bottom: 20px;
             position: relative;
         }
-
+        
         .repertoire-text h2:after {
             content: "";
             position: absolute;
@@ -573,21 +573,21 @@
             font-weight: bold;
         }
         .back-to-top {
-                        position: fixed;
-                        bottom: 20px;
-                        right: 20px;
-                        background: var(--highlight-color);
-                        color: black;
-                        border: none;
-                        border-radius: 50%;
-                        width: 50px;
-                        height: 50px;
-                        font-size: 24px;
-                        cursor: pointer;
-                        display: none;
-                        justify-content: center;
-                        align-items: center;
-                        z-index: 9999;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: var(--highlight-color);
+			color: black;
+			border: none;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			font-size: 24px;
+			cursor: pointer;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
             transition: all 0.3s ease;
         }
         .back-to-top:hover {
@@ -599,8 +599,8 @@
             padding: 20px;
             font-size: 0.9em;
         }
-
-         @media (max-width: 768px) {
+        
+	 @media (max-width: 768px) {
     header {
         padding: 15px;
         background: black;
@@ -659,22 +659,6 @@
         background: rgba(252, 227, 3, 0.1);
     }
 
-    .social-icons {
-        padding-right: 15px;
-        margin-left: auto;
-    }
-
-    .social-icons a {
-        color: #A0A09F;
-        font-size: 18px;
-        margin-left: 15px;
-        transition: color 0.3s ease;
-    }
-
-    .social-icons a:hover {
-        color: var(--highlight-color);
-    }
-
     /* Hero sekcija */
     .hero {
         margin-top: 80px !important;
@@ -684,8 +668,8 @@
     .hero h1 {
         color: white;
         text-shadow: 2px 2px 4px rgba(#656565);
-
-
+    
+        
     }
 
     /* Ostale sekcije */
@@ -772,7 +756,7 @@
             border-bottom: 2px solid #fff;
             margin-bottom: 30px;
         }
-        }
+	}
     .highlight-genre {
         color: var(--highlight-color);
         font-family: 'Bebas Neue', sans-serif;
@@ -794,7 +778,7 @@
     }
 
     /* O nama sekcija */
-
+	
     .about-section h2 {
         font-size: 36px;
         margin-bottom: 20px;
@@ -811,7 +795,7 @@
         background: var(--highlight-color);
         bottom: -10px;
         left: 0;
-
+        
     }
 
     .about-card {
@@ -821,7 +805,7 @@
     }
 
     /* Vraćamo sve highlight elemente na plavu boju */
-
+   
 
     .nav-links a:hover {
         color: var(--highlight-color) !important;
@@ -880,7 +864,7 @@
         .nav-links.active {
             box-shadow: 0 4px 6px rgba(252, 227, 3, 0.1);
         }
-
+        
         .nav-links a:hover {
             background: rgba(252, 227, 3, 0.1);
         }
@@ -1014,13 +998,13 @@
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
     </header>
-
+    
     <button class="back-to-top" id="backToTop">&#8679;</button>
-
+    
     <section class="hero" id="home">
         <h1>Legacy</h1>
     </section>
-
+     
     <section class="schedule" id="schedule">
         <h2>Mesečni raspored</h2>
         <table class="schedule-table">
@@ -1037,13 +1021,13 @@
             <tr><td>Mart 29</td><td>The Pijaca, Beograd</td></tr>
         </table>
     </section>
-
+    
     <section id="legacy">
         <h2>O nama</h2>
         <div class="about-section">
             <div class="about-card" id="legacy">
                 <p>Legacy bend je nastao iz strasti prema muzici i želje da svaki događaj učinimo nezaboravnim. Sa više od 10 godina iskustva na sceni, razvili smo jedinstveni stil koji kombinuje profesionalnost sa energičnim nastupom.</p>
-
+                
                 <p>Naš repertoar obuhvata širok spektar žanrova, od <span class="highlight-genre">POP</span> i <span class="highlight-genre">ROCK</span> klasika, preko tradicionalne <span class="highlight-genre">FOLK</span> muzike, do modernog <span class="highlight-genre">EDM</span> zvuka. Posebno smo ponosni na našu interpretaciju <span class="highlight-genre">JAZZ</span> i <span class="highlight-genre">BLUES</span> standarda, kao i domaće <span class="highlight-genre">ZABAVNE</span> muzike.</p>
 
                 <p>Svaki član benda je profesionalni muzičar sa formalnim muzičkim obrazovanjem, što nam omogućava da se lako prilagodimo različitim muzičkim zahtevima i stilovima. Od intimnih akustičnih nastupa do energičnih <span class="highlight-genre">DISCO</span> i <span class="highlight-genre">FUNK</span> setova, možemo da kreiramo savršenu atmosferu za svaku priliku.</p>
@@ -1058,54 +1042,54 @@
 
     <section id="members">
         <div>
-            <img src="sale.jpeg" alt="Member 1">
+            <img src="sale.jpeg" alt="Saša Đidić">
         </div>
         <div class="text">
-            <h2>Član 1</h2>
-            <p>Ovo je opis prvog člana benda. On svira gitaru već više od deset godina i doprinosi jedinstvenom zvuku benda. Njegova strast prema muzici vidi se u svakom tonu koji odsvira. Pored sviranja, piše pesme i aranžmane za bend, unoseći kreativnost u svaki projekat.</p>
+            <h2>Saša Đidić</h2>
+            <p>Glavni vokal benda donosi jedinstvenu energiju i harizmu na scenu. Sa izuzetnim vokalnim sposobnostima i dugogodišnjim iskustvom, Saša vodi bend kroz raznovrsne muzičke žanrove. Njegova interpretacija i emotivno izvođenje čine svaku pesmu posebnom, a njegova scenska prezentacija ostavlja publiku bez daha.</p>
         </div>
 
         <div class="text">
-            <h2>Član 2</h2>
-            <p>Naš bubnjar donosi energiju i ritam koji čini naš zvuk prepoznatljivim. Njegova preciznost i osećaj za dinamiku daju snagu svakoj pesmi. Osim sviranja, bavi se produkcijom i često doprinosi tehničkim aspektima bendovskih snimaka.</p>
+            <h2>Aleksandra Simonović</h2>
+            <p>Svojim moćnim i emotivnim vokalom, Aleksandra donosi posebnu dimenziju zvuka benda. Njen širok vokalni opseg i sposobnost da se prilagodi različitim muzičkim stilovima, od nežnih balada do energičnih pop i rok numera, čini je nezamenljivim delom Legacy-ja. Njena scenska harizma i energija dodatno obogaćuju svaki nastup.</p>
         </div>
         <div>
-            <img src="aleksandra.jpg" alt="Member 2">
+            <img src="aleksandra.jpg" alt="Aleksandra Simonović">
         </div>
 
         <div>
-            <img src="nikola.jpg" alt="Member 3">
+            <img src="nikola.jpg" alt="Nikola Arišć">
         </div>
         <div class="text">
-            <h2>Član 3</h2>
-            <p>Basista benda pruža stabilnu osnovu svakoj pesmi. Njegov osećaj za groove i ritam povezuje bubnjeve sa melodijama, stvarajući bogat i pun zvuk. Njegov doprinos bendu prevazilazi samo muziku – on je i organizaciona snaga tima.</p>
+            <h2>Nikola Arišć</h2>
+            <p>Kao gitarista benda, Nikola svojim virtuoznim sviračkim umećem i kreativnim solažama daje poseban pečat zvuka Legacy-ja. Njegovo bogato iskustvo i tehnička veština omogućavaju bendu da izvodi najzahtevnije numere, dok njegova muzikalnost i osećaj za improvizaciju stvaraju nezaboravne muzičke momente.</p>
         </div>
 
         <div class="text">
-            <h2>Član 4</h2>
-            <p>Naša pevačica ima glas koji ostavlja bez daha. Sa širokim vokalnim opsegom i emotivnim izvođenjem, ona donosi dušu svakoj pesmi. Pored pevanja, aktivno učestvuje u pisanju tekstova i aranžmana, unoseći lični pečat u muziku.</p>
+            <h2>Milovan Kovač</h2>
+            <p>Na bas gitari, Milovan obezbeđuje čvrst temelj i groove koji pokreće bend. Njegova preciznost i muzikalnost, uz sposobnost da se savršeno uklopi sa ritmom bubnja, stvaraju moćnu ritam sekciju. Njegov doprinos aranžmanima i energičan nastup čine ga ključnim delom benda.</p>
         </div>
         <div>
-            <img src="milovan.jpg" alt="Member 4">
+            <img src="milovan.jpg" alt="Milovan Kovač">
         </div>
 
         <div>
-            <img src="lemi.jpg" alt="Member 5">
+            <img src="lemi.jpg" alt="Milan Avramović">
         </div>
         <div class="text">
-            <h2>Član 5</h2>
-            <p>Klavijaturista donosi bogate harmonije i slojevite melodije u naš zvuk. Njegova kreativnost u kombinaciji sa tehničkim znanjem omogućava bendu da istražuje različite muzičke žanrove i stilove. Uvek unosi novu energiju u probe i nastupe.</p>
+            <h2>Milan Avramović</h2>
+            <p>Za bubnjevima, Milan je srce ritma Legacy benda. Njegova preciznost, dinamika i osećaj za različite muzičke stilove omogućavaju bendu da održi energiju na najvišem nivou. Svojim iskustvom i tehničkim umećem doprinosi jedinstvenom zvuku benda, stvarajući savršenu osnovu za svaku numeru.</p>
         </div>
 
         <div class="text">
-            <h2>Član 6</h2>
-            <p>Prateći vokali i gitara daju dodatnu dubinu zvuka benda. Ovaj član doprinosi harmonijama koje obogaćuju pesme i pružaju slojevitost muzičkom izrazu. Njegova energija na sceni čini svaki nastup posebnim i nezaboravnim.</p>
+            <h2>Aleksandar Ristić</h2>
+            <p>Na klavijaturama, Aleksandar stvara bogate harmonije i atmosferu koja upotpunjuje zvuk benda. Njegovo klasično muzičko obrazovanje i poznavanje različitih muzičkih žanrova omogućavaju mu da doda posebnu dimenziju svakoj pesmi. Svojim talentom i kreativnošću značajno doprinosi aranžmanima i ukupnom zvuku benda.</p>
         </div>
         <div>
-            <img src="beki.jpeg" alt="Member 6">
+            <img src="beki.jpeg" alt="Aleksandar Ristić">
         </div>
     </section>
-
+    
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
         <div class="gallery-container">
@@ -1137,7 +1121,7 @@
             <div class="gallery-indicator" data-index="9"></div>
         </div>
     </section>
-
+    
     <!-- FAQ Section -->
     <section id="faq" class="faq-section">
         <h2>Često postavljana pitanja</h2>
@@ -1213,7 +1197,7 @@
     </footer>
 
     <script>
-            // Dodajte ovo na početak script sekcije
+	    // Dodajte ovo na početak script sekcije
     document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -1272,7 +1256,7 @@ let slideInterval;
 function updateSlides() {
     slides.forEach((slide, index) => {
         slide.className = 'gallery-slide';
-
+        
         if (index === currentSlide) {
             slide.classList.add('active');
         } else if (index === (currentSlide - 1 + slides.length) % slides.length) {
@@ -1321,7 +1305,7 @@ function setActiveNavLink() {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
-
+        
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             currentSection = section.getAttribute('id');
         }
@@ -1339,16 +1323,16 @@ function setActiveNavLink() {
 navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
-
+        
         // Extract the target section ID from the href
         const targetId = this.getAttribute('href');
         const targetSection = document.querySelector(targetId);
-
+        
         if (targetSection) {
             // Account for fixed header when scrolling
             const headerHeight = document.querySelector('header').offsetHeight;
             const targetPosition = targetSection.offsetTop - headerHeight;
-
+            
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
@@ -1364,7 +1348,7 @@ window.addEventListener('resize', setActiveNavLink);
 // Initialize active state on page load
 document.addEventListener('DOMContentLoaded', () => {
     setActiveNavLink();
-
+    
     // Initialize download button for repertoire
     const downloadBtn = document.querySelector('.download-btn');
     if (downloadBtn) {
@@ -1374,7 +1358,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Ovde možete dodati pravu funkcionalnost za preuzimanje kada bude spremna
         });
     }
-
+    
     // Mobile menu setup (za buduće proširenje)
     setupMobileMenu();
 });
@@ -1388,12 +1372,12 @@ function setupMobileMenu() {
         mobileToggle.className = 'mobile-menu-toggle';
         mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
         header.prepend(mobileToggle);
-
+        
         // Event listener za toggling mobilnog menija
         mobileToggle.addEventListener('click', function() {
             const nav = document.querySelector('nav');
             nav.classList.toggle('mobile-active');
-
+            
             // Menjamo ikonu
             const icon = this.querySelector('i');
             if (nav.classList.contains('mobile-active')) {
@@ -1408,11 +1392,11 @@ function setupMobileMenu() {
 // Dodavanje animacija za elemente na scroll
 function animateOnScroll() {
     const elements = document.querySelectorAll('.about-card, .schedule-table, .faq-item, #members > div');
-
+    
     elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
         const screenPosition = window.innerHeight / 1.3;
-
+        
         if (elementPosition < screenPosition) {
             element.classList.add('animate-in');
         }
@@ -1494,7 +1478,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
-
+    
     // Inicijalizujemo animacije
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll(); // Pokreni odmah za elemente koji su već vidljivi
@@ -1503,7 +1487,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Lazy loading za slike (optimizacija performansi)
 document.addEventListener('DOMContentLoaded', function() {
     const imagesToLazy = document.querySelectorAll('img[src]');
-
+    
     if ('IntersectionObserver' in window) {
         const imageObserver = new IntersectionObserver(function(entries, observer) {
             entries.forEach(function(entry) {
@@ -1514,7 +1498,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-
+        
         imagesToLazy.forEach(function(image) {
             imageObserver.observe(image);
         });
@@ -1526,7 +1510,7 @@ function scrollToElement(elementId) {
     const element = document.getElementById(elementId);
     const header = document.querySelector('header');
     const headerHeight = header.offsetHeight;
-
+    
     if (element) {
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 10;
